@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.CreatetaskActivity"
+    android:background="#A3362626">
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_backspace_black_24dp"
+        android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Create New Task"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/ivBack"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+           style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="330dp"/>
+       <TextView
+           android:id="@+id/tvClient"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="CLIENT"
+           android:textSize="8sp"
+           android:layout_marginStart="15dp"
+           android:layout_marginTop="15dp"
+           android:textColor="@android:color/white"
+           android:layout_below="@id/ivBack"/>
+        <com.example.customuiassignment.views.components.CircularImageView
+            android:id="@+id/ivClient"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile2"
+            app:cornerX="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:cornerY="20dp"
+            app:cornerRadius="15dp"
+            android:layout_below="@id/tvClient"
+           />
+      <Spinner
+          android:id="@+id/etName"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:entries="@array/spinnerItems"
+          android:textColor="@android:color/white"
+          android:layout_toRightOf="@id/ivClient"
+          android:outlineAmbientShadowColor="@android:color/white"
+          android:outlineSpotShadowColor="@android:color/white"
+          android:layout_below="@id/tvClient"
+          android:layout_marginStart="100dp"
+          android:layout_marginTop="20dp"
+          android:text="Awsmd Team"/>
+        <TextView
+            android:id="@+id/tvPName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Name"
+            android:layout_below="@id/ivClient"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:id="@+id/etCreateTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="Create Addition pages"
+            android:layout_below="@id/tvPName"
+            android:layout_marginStart="10dp"/>
+        <LinearLayout
+            android:id="@+id/llOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCreateTask"
+            android:weightSum="2">
+        <RelativeLayout
+            android:id="@+id/rlOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project Name"/>
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvProjectName"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_camera_alt_black_24dp"/>
+           <EditText
+               android:id="@+id/etCalentarTwo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:forceDarkAllowed="false"
+               android:text="Dec 24 , 2019"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
+               android:layout_toRightOf="@id/ivCamera"
+               android:textColor="@android:color/white"
+               android:layout_below="@id/tvProjectName"
+               />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toRightOf="@id/rlOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/etCreateTask"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvProjectNameTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project Name"/>
+            <ImageView
+                android:id="@+id/ivCameraTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvProjectNameTwo"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_camera_alt_black_24dp"/>
+            <EditText
+                android:id="@+id/etCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:forceDarkAllowed="false"
+                android:text="Dec 24 , 2019"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_toRightOf="@id/ivCameraTwo"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/tvProjectNameTwo"
+                />
+        </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtAssign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASSIGNEE"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/llOne"
+            android:layout_marginTop="15dp"
+           />
+<RelativeLayout
+    android:id="@+id/rellayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtAssign"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp">
+
+        <com.example.customuiassignment.views.components.CircularImageView
+            android:id="@+id/imageTwo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/imageOne"
+            android:scaleType="centerCrop"
+            app:cornerRadius="30dp"
+            app:cornerX="40dp"
+            app:cornerY="40dp"
+            app:srcCompat="@drawable/profile2" />
+
+        <com.example.customuiassignment.views.components.CircularImageView
+            android:id="@+id/imageThree"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="-31dp"
+            android:layout_toRightOf="@id/imageTwo"
+            app:cornerRadius="30dp"
+            app:cornerX="40dp"
+            app:cornerY="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile1" />
+
+        <com.example.customuiassignment.views.components.CircularImageView
+            android:id="@+id/imageMore"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="-31dp"
+            android:layout_toRightOf="@id/imageThree"
+            android:scaleType="centerCrop"
+            app:cornerRadius="30dp"
+            app:cornerX="40dp"
+            app:cornerY="40dp"
+            android:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@drawable/plus"
+            android:backgroundTintMode="add"
+
+            />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/rellayout"/>
+        <include layout = "@layout/layout_chip"
+            android:id="@+id/layoutChip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCategory"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"/>
+        <include layout="@layout/layout_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutChip"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

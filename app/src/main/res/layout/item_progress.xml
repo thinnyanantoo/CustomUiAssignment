@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="28dp"
+    android:elevation="28dp">
+
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="5dp">
+        <TextView
+            android:id="@+id/txtOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In progress"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/txtTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Pages"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/txtOne"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#Design"
+            android:layout_toRightOf="@id/txtOne"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="120dp"
+            android:textSize="15sp"
+            android:gravity="end"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_marginTop="45dp"
+        android:layout_marginStart="5dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_comment_black_24dp"
+            android:padding="5dp"
+           />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_attach_file_black_24dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="120dp"
+            android:text="N 163"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+        <com.example.customuiassignment.views.components.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile1"
+            app:cornerRadius="15dp"
+            app:cornerX="18dp"
+            app:cornerY="20dp"
+            />
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

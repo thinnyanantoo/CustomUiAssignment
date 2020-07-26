@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="30dp">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <View
+        android:layout_width="290dp"
+        android:layout_height="1sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/txtDesc"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAttach"
+        app:icon="@drawable/ic_attach_file_black_24dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_toRightOf="@+id/txtDesc"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+        app:iconSize="24dp"/>
+
+    <TextView
+        android:id="@+id/txtAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attachment"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/btnAttach"/>
+
+    <com.example.customuiassignment.views.components.CircularImageView
+        android:id="@+id/ivAttach"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/profile2"
+        app:cornerX="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:cornerY="30dp"
+        app:cornerRadius="20dp"
+        android:layout_below="@id/txtAttach"
+
+        />
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressTint="@color/colorPrimary"
+        android:progressBackgroundTint="@color/colorPrimary"
+        android:id="@+id/horizontalProgress"
+        android:layout_toRightOf="@id/ivAttach"
+        android:layout_below="@id/txtAttach"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:outlineAmbientShadowColor="@color/colorPrimary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreate"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="52dp"
+        android:text="Create Task"
+        android:layout_below="@id/horizontalProgress"
+        android:gravity="center"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.round" />
+
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
